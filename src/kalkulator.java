@@ -195,6 +195,11 @@ int pilih;
 
         btnminples.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 14)); // NOI18N
         btnminples.setText("+/-");
+        btnminples.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnminplesActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnminples, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 130, 40));
 
         btnsamadengan.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 14)); // NOI18N
@@ -335,6 +340,11 @@ pilih=4;
             break;
 } 
     }//GEN-LAST:event_btnsamadenganActionPerformed
+
+    private void btnminplesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnminplesActionPerformed
+      angka += "-";
+display.setText(angka);
+    }//GEN-LAST:event_btnminplesActionPerformed
 
     /**
      * @param args the command line arguments
